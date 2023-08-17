@@ -59,16 +59,24 @@
               </div>
             <!-- third card  -->
             <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title">Parallelogram</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                  <h2  class="card-title text-2xl">Rectangle</h2>
+                  <p>Area (A) = b X h</p>
+                  <p>
+                    <input type="text" class=" ml-4 border bg-gray-200 text-xl w-24" id="rectangle-width" placeholder="w">
+                    <span>cm</span>
+
+                    <!-- get triangle height  -->
+                    <input type="text" class=" ml-4 border bg-gray-200 text-xl w-24" id="rectangle-lenght" placeholder="L">
+                    <span>cm</span>
+                  </p>
+                  <p class="text-purple-300 text-2xl">Area : <span id="rectangle-area" class="text-red-300 font-bold text-2xl">0</span> cm<sup>2</sup></p>
+                  <div class="card-actions">
+                    <button onclick="calculatorRecTangleArea()" class="btn btn-primary  w-full mt-4 text-lg font-bold" id="">Calculate</button>
                   </div>
                 </div>
               </div>
-        </div>
 
         <!-- area calculation -->
         <div class="w-[400px]">
