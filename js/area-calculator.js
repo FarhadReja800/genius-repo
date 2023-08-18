@@ -53,3 +53,37 @@ function calculatorRecTangleArea(){
 
 
 }
+function calculatorPrallelogramArea(){
+        const base = getInputValue('parallelogram-base');
+        console.log(base)
+
+        const height = getInputValue('parallelogram-height');
+        
+
+        const area = base * height;
+       
+        setElementText('parallelogram-area', area);
+}
+function calculatorEllipseArea(){
+    const majorRadius = getInputValue('ellipse-major-radius');
+    const minorRadius = getInputValue('ellipse-minor-radius');
+    const area = 3.14 * majorRadius * minorRadius;
+    setElementText('ellipse-area', area);
+
+ }
+
+
+function getInputValue(fieldId){
+    const inputField = document.getElementById(fieldId);
+    const inputValueText = inputField.value;
+    const value = parseFloat(inputValueText);
+    return value;
+}
+
+ function setElementText(elementId, area){
+    const  element = document.getElementById(elementId)
+    element.innerText = area;
+ }
+
+
+ 
